@@ -69,7 +69,7 @@ class YmlReader():
         return filelist
 
     def count_loc(self, file):
-        with open(file) as f:
+        with open(file, encoding='utf8') as f:
             for i, l in enumerate(f):
                 pass
             try:
