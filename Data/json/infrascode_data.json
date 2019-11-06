@@ -1,0 +1,1228 @@
+{
+    "carlbuchmann": {
+        "iac-dev": {
+            "carlbuchmann/iac-dev\\iac-dev.yml": [
+                {
+                    "hosts": "localhost",
+                    "become": true,
+                    "tasks": [
+                        {
+                            "name": "Install Git",
+                            "import_role": {
+                                "name": "git"
+                            },
+                            "tags": "git"
+                        },
+                        {
+                            "name": "Install PowerShell",
+                            "import_role": {
+                                "name": "powershell"
+                            },
+                            "tags": "powershell"
+                        },
+                        {
+                            "name": "Install XRDP",
+                            "import_role": {
+                                "name": "xrdp"
+                            },
+                            "tags": "xrdp"
+                        },
+                        {
+                            "name": "Deploy latest version of ansible, enable windows remote management with kerberos and install various module dependencies",
+                            "import_role": {
+                                "name": "ansible-engine"
+                            },
+                            "tags": "ansible"
+                        }
+                    ]
+                },
+                {
+                    "hosts": "localhost",
+                    "tasks": [
+                        {
+                            "name": "Install Visual Studio Code",
+                            "import_role": {
+                                "name": "vscode"
+                            },
+                            "tags": "vscode"
+                        }
+                    ]
+                }
+            ],
+            "carlbuchmann/iac-dev\\host_vars\\localhost.yml": {
+                "domain": "homelab.local",
+                "domain_controllers": [
+                    "dc01.homelab.local",
+                    "dc02.homelab.local"
+                ],
+                "vscode_extensions": [
+                    "redhat.vscode-yaml",
+                    "samuelcolvin.jinjahtml",
+                    "ms-python.python",
+                    "ms-vscode.PowerShell",
+                    "vscoss.vscode-ansible",
+                    "GrapeCity.gc-excelviewer",
+                    "yzhang.markdown-all-in-one",
+                    "DavidAnson.vscode-markdownlint",
+                    "streetsidesoftware.code-spell-checker",
+                    "eamodio.gitlens"
+                ]
+            },
+            "carlbuchmann/iac-dev\\roles\\requirements.yml": [
+                {
+                    "src": "https://github.com/carlbuchmann/ansible-role-ansible-engine",
+                    "version": "v1.0",
+                    "name": "ansible-engine"
+                },
+                {
+                    "src": "https://github.com/carlbuchmann/ansible-role-git",
+                    "version": "v2.20.1",
+                    "name": "git"
+                },
+                {
+                    "src": "https://github.com/carlbuchmann/ansible-role-powershell",
+                    "version": "v1.0",
+                    "name": "powershell"
+                },
+                {
+                    "src": "https://github.com/carlbuchmann/ansible-role-vscode",
+                    "version": "v1.0",
+                    "name": "vscode"
+                },
+                {
+                    "src": "https://github.com/carlbuchmann/ansible-role-xrdp",
+                    "version": "v1.0",
+                    "name": "xrdp"
+                }
+            ]
+        }
+    },
+    "chanzuckerberg": {
+        "fogg": {
+            "chanzuckerberg/fogg\\.goreleaser.prerelease.yml": {
+                "before": {
+                    "hooks": [
+                        "make clean",
+                        "make packr"
+                    ]
+                },
+                "builds": [
+                    {
+                        "binary": "fogg",
+                        "env": [
+                            "CGO_ENABLED=0"
+                        ],
+                        "goos": [
+                            "darwin",
+                            "linux",
+                            "windows"
+                        ],
+                        "goarch": [
+                            "amd64"
+                        ],
+                        "ldflags": [
+                            "-w -s -X github.com/chanzuckerberg/fogg/util.GitSha={{.Commit}} -X github.com/chanzuckerberg/fogg/util.Version={{.Version}} -X github.com/chanzuckerberg/fogg/util.Dirty=false -X github.com/chanzuckerberg/fogg/util.Release=true"
+                        ]
+                    }
+                ],
+                "archive": {
+                    "files": [
+                        "none*"
+                    ]
+                },
+                "release": {
+                    "prerelease": true
+                }
+            },
+            "chanzuckerberg/fogg\\.goreleaser.yml": {
+                "before": {
+                    "hooks": [
+                        "make clean",
+                        "make packr"
+                    ]
+                },
+                "builds": [
+                    {
+                        "binary": "fogg",
+                        "env": [
+                            "CGO_ENABLED=0"
+                        ],
+                        "goos": [
+                            "darwin",
+                            "linux",
+                            "windows"
+                        ],
+                        "goarch": [
+                            "amd64"
+                        ],
+                        "ldflags": [
+                            "-w -s -X github.com/chanzuckerberg/fogg/util.GitSha={{.Commit}} -X github.com/chanzuckerberg/fogg/util.Version={{.Version}} -X github.com/chanzuckerberg/fogg/util.Dirty=false -X github.com/chanzuckerberg/fogg/util.Release=true"
+                        ]
+                    }
+                ],
+                "archive": {
+                    "files": [
+                        "none*"
+                    ]
+                },
+                "release": {
+                    "prerelease": false
+                },
+                "brew": {
+                    "description": "Terraform without pain.",
+                    "github": {
+                        "owner": "chanzuckerberg",
+                        "name": "homebrew-tap"
+                    },
+                    "homepage": "https://github.com/chanzuckerberg/fogg",
+                    "test": "system \"#{bin}/fogg version\""
+                }
+            },
+            "chanzuckerberg/fogg\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.11"
+                ],
+                "install": [
+                    "npm install -g snyk",
+                    "make setup"
+                ],
+                "script": [
+                    "make"
+                ],
+                "jobs": {
+                    "include": [
+                        {
+                            "stage": "check",
+                            "script": [
+                                "make",
+                                "bash <(curl -s https://codecov.io/bash)"
+                            ]
+                        },
+                        {
+                            "stage": "check",
+                            "script": [
+                                "snyk monitor --org=czi",
+                                "snyk test"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\agext\\levenshtein\\.travis.yml": {
+                "language": "go",
+                "sudo": false,
+                "go": [
+                    1.8,
+                    "1.7.5",
+                    "1.7.4",
+                    "1.7.3",
+                    "1.7.2",
+                    "1.7.1",
+                    1.7,
+                    "tip",
+                    "1.6.4",
+                    "1.6.3",
+                    "1.6.2",
+                    "1.6.1",
+                    1.6,
+                    "1.5.4",
+                    "1.5.3",
+                    "1.5.2",
+                    "1.5.1",
+                    1.5,
+                    "1.4.3",
+                    "1.4.2",
+                    "1.4.1",
+                    1.4,
+                    "1.3.3",
+                    "1.3.2",
+                    "1.3.1",
+                    1.3,
+                    "1.2.2",
+                    "1.2.1",
+                    1.2,
+                    "1.1.2",
+                    "1.1.1",
+                    1.1
+                ],
+                "before_install": [
+                    "go get github.com/mattn/goveralls"
+                ],
+                "script": [
+                    "$HOME/gopath/bin/goveralls -service=travis-ci"
+                ],
+                "notifications": {
+                    "email": {
+                        "on_success": "never"
+                    }
+                },
+                "matrix": {
+                    "fast_finish": true,
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        },
+                        {
+                            "go": "1.6.4"
+                        },
+                        {
+                            "go": "1.6.3"
+                        },
+                        {
+                            "go": "1.6.2"
+                        },
+                        {
+                            "go": "1.6.1"
+                        },
+                        {
+                            "go": 1.6
+                        },
+                        {
+                            "go": "1.5.4"
+                        },
+                        {
+                            "go": "1.5.3"
+                        },
+                        {
+                            "go": "1.5.2"
+                        },
+                        {
+                            "go": "1.5.1"
+                        },
+                        {
+                            "go": 1.5
+                        },
+                        {
+                            "go": "1.4.3"
+                        },
+                        {
+                            "go": "1.4.2"
+                        },
+                        {
+                            "go": "1.4.1"
+                        },
+                        {
+                            "go": 1.4
+                        },
+                        {
+                            "go": "1.3.3"
+                        },
+                        {
+                            "go": "1.3.2"
+                        },
+                        {
+                            "go": "1.3.1"
+                        },
+                        {
+                            "go": 1.3
+                        },
+                        {
+                            "go": "1.2.2"
+                        },
+                        {
+                            "go": "1.2.1"
+                        },
+                        {
+                            "go": 1.2
+                        },
+                        {
+                            "go": "1.1.2"
+                        },
+                        {
+                            "go": "1.1.1"
+                        },
+                        {
+                            "go": 1.1
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\aokoli\\goutils\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    1.6,
+                    1.7,
+                    1.8,
+                    "tip"
+                ],
+                "script": [
+                    "go test -v"
+                ],
+                "notifications": {
+                    "webhooks": {
+                        "urls": [
+                            "https://webhooks.gitter.im/e/06e3328629952dabe3e0"
+                        ],
+                        "on_success": "change",
+                        "on_failure": "always",
+                        "on_start": "never"
+                    }
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\aokoli\\goutils\\appveyor.yml": {
+                "version": "build-{build}.{branch}",
+                "clone_folder": "C:\\gopath\\src\\github.com\\Masterminds\\goutils",
+                "shallow_clone": true,
+                "environment": {
+                    "GOPATH": "C:\\gopath"
+                },
+                "platform": [
+                    "x64"
+                ],
+                "build": false,
+                "install": [
+                    "go version",
+                    "go env"
+                ],
+                "test_script": [
+                    "go test -v"
+                ],
+                "deploy": false
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\armon\\go-radix\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "tip"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\blang\\semver\\.travis.yml": {
+                "language": "go",
+                "matrix": {
+                    "include": [
+                        {
+                            "go": "1.4.3"
+                        },
+                        {
+                            "go": "1.5.4"
+                        },
+                        {
+                            "go": "1.6.3"
+                        },
+                        {
+                            "go": 1.7
+                        },
+                        {
+                            "go": "tip"
+                        }
+                    ],
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                },
+                "install": [
+                    "go get golang.org/x/tools/cmd/cover",
+                    "go get github.com/mattn/goveralls"
+                ],
+                "script": [
+                    "echo \"Test and track coverage\" ; $HOME/gopath/bin/goveralls -package \".\" -service=travis-ci -repotoken $COVERALLS_TOKEN",
+                    "echo \"Build examples\" ; cd examples && go build",
+                    "echo \"Check if gofmt'd\" ; diff -u <(echo -n) <(gofmt -d -s .)"
+                ],
+                "env": {
+                    "global": {
+                        "secure": "HroGEAUQpVq9zX1b1VIkraLiywhGbzvNnTZq2TMxgK7JHP8xqNplAeF1izrR2i4QLL9nsY+9WtYss4QuPvEtZcVHUobw6XnL6radF7jS1LgfYZ9Y7oF+zogZ2I5QUMRLGA7rcxQ05s7mKq3XZQfeqaNts4bms/eZRefWuaFZbkw="
+                    }
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\fatih\\color\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.8.x",
+                    "tip"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\go-errors\\errors\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.8.x",
+                    "1.10.x"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\go-ini\\ini\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    "1.6.x",
+                    "1.7.x",
+                    "1.8.x",
+                    "1.9.x",
+                    "1.10.x",
+                    "1.11.x"
+                ],
+                "script": [
+                    "go get golang.org/x/tools/cmd/cover",
+                    "go get github.com/smartystreets/goconvey",
+                    "mkdir -p $HOME/gopath/src/gopkg.in",
+                    "ln -s $HOME/gopath/src/github.com/go-ini/ini $HOME/gopath/src/gopkg.in/ini.v1",
+                    "cd $HOME/gopath/src/gopkg.in/ini.v1",
+                    "go test -v -cover -race"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\gobuffalo\\packr\\.codeclimate.yml": {
+                "engines": {
+                    "golint": {
+                        "enabled": true,
+                        "checks": {
+                            "GoLint/Naming/MixedCaps": {
+                                "enabled": false
+                            }
+                        }
+                    },
+                    "govet": {
+                        "enabled": true
+                    },
+                    "gofmt": {
+                        "enabled": true
+                    },
+                    "fixme": {
+                        "enabled": true
+                    }
+                },
+                "ratings": {
+                    "paths": [
+                        "**.go"
+                    ]
+                },
+                "exclude_paths": [
+                    "**/*_test.go",
+                    "*_test.go",
+                    "fixtures/"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\gobuffalo\\packr\\.goreleaser.yml": {
+                "builds": [
+                    {
+                        "goos": [
+                            "darwin",
+                            "linux",
+                            "windows"
+                        ],
+                        "env": [
+                            "CGO_ENABLED=0"
+                        ],
+                        "main": "./packr/main.go",
+                        "binary": "packr"
+                    }
+                ],
+                "checksum": {
+                    "name_template": "checksums.txt"
+                },
+                "snapshot": {
+                    "name_template": "{{ .Tag }}-next"
+                },
+                "changelog": {
+                    "sort": "asc",
+                    "filters": {
+                        "exclude": [
+                            "^docs:",
+                            "^test:"
+                        ]
+                    }
+                },
+                "brew": {
+                    "github": {
+                        "owner": "gobuffalo",
+                        "name": "homebrew-tap"
+                    }
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\gobuffalo\\packr\\.travis.yml": {
+                "language": "go",
+                "sudo": false,
+                "go": [
+                    1.9,
+                    "1.10",
+                    "1.11",
+                    "tip"
+                ],
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                },
+                "script": [
+                    "make ci-test"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\google\\uuid\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.4.3",
+                    "1.5.3",
+                    "tip"
+                ],
+                "script": [
+                    "go test -v ./..."
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\go-getter\\.travis.yml": {
+                "sudo": false,
+                "addons": {
+                    "apt": {
+                        "sources": [
+                            {
+                                "sourceline": "ppa:git-core/ppa"
+                            }
+                        ],
+                        "packages": [
+                            "git"
+                        ]
+                    }
+                },
+                "language": "go",
+                "go": [
+                    "1.8.x",
+                    "1.9.x",
+                    "master"
+                ],
+                "branches": {
+                    "only": [
+                        "master"
+                    ]
+                },
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "master"
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\go-getter\\appveyor.yml": {
+                "version": "build-{branch}-{build}",
+                "image": "Visual Studio 2017",
+                "clone_folder": "c:\\gopath\\github.com\\hashicorp\\go-getter",
+                "environment": {
+                    "GOPATH": "c:\\gopath"
+                },
+                "install": [
+                    {
+                        "cmd": "echo %Path%\ngo version\ngo env\ngo get -d -v -t ./..."
+                    }
+                ],
+                "build_script": [
+                    {
+                        "cmd": "go test -v ./..."
+                    }
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\go-multierror\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    "1.x"
+                ],
+                "branches": {
+                    "only": [
+                        "master"
+                    ]
+                },
+                "script": "make test testrace"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\go-uuid\\.travis.yml": {
+                "language": "go",
+                "sudo": false,
+                "go": [
+                    1.4,
+                    1.5,
+                    1.6,
+                    "tip"
+                ],
+                "script": [
+                    "go test -bench . -benchmem -v ./..."
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\go-version\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    1.0,
+                    1.1,
+                    1.2,
+                    1.3,
+                    1.4,
+                    1.9,
+                    "1.10"
+                ],
+                "script": [
+                    "go test"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\hcl\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    "1.x",
+                    "tip"
+                ],
+                "branches": {
+                    "only": [
+                        "master"
+                    ]
+                },
+                "script": "make test"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\hcl\\appveyor.yml": {
+                "version": "build-{branch}-{build}",
+                "image": "Visual Studio 2015",
+                "clone_folder": "c:\\gopath\\src\\github.com\\hashicorp\\hcl",
+                "environment": {
+                    "GOPATH": "c:\\gopath"
+                },
+                "init": [
+                    "git config --global core.autocrlf false"
+                ],
+                "install": [
+                    {
+                        "cmd": "echo %Path%\ngo version\ngo env\ngo get -t ./..."
+                    }
+                ],
+                "build_script": [
+                    {
+                        "cmd": "go test -v ./..."
+                    }
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\hil\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": 1.7
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\hashicorp\\hil\\appveyor.yml": {
+                "version": "build-{branch}-{build}",
+                "image": "Visual Studio 2015",
+                "clone_folder": "c:\\gopath\\src\\github.com\\hashicorp\\hil",
+                "environment": {
+                    "GOPATH": "c:\\gopath"
+                },
+                "init": [
+                    "git config --global core.autocrlf true"
+                ],
+                "install": [
+                    {
+                        "cmd": "echo %Path%\ngo version\ngo env\ngo get -d -v -t ./..."
+                    }
+                ],
+                "build_script": [
+                    {
+                        "cmd": "go test -v ./..."
+                    }
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\howeyc\\gopass\\.travis.yml": {
+                "language": "go",
+                "os": [
+                    "linux",
+                    "osx"
+                ],
+                "go": [
+                    1.3,
+                    1.4,
+                    1.5,
+                    "tip"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\huandu\\xstrings\\.travis.yml": {
+                "language": "go"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\imdario\\mergo\\.travis.yml": {
+                "language": "go",
+                "install": [
+                    "go get -t",
+                    "go get golang.org/x/tools/cmd/cover",
+                    "go get github.com/mattn/goveralls"
+                ],
+                "script": [
+                    "$HOME/gopath/bin/goveralls -service=travis-ci -repotoken $COVERALLS_TOKEN"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\imdario\\mergo\\testdata\\license.yml": {
+                "import": "../../../../fossene/db/schema/thing.yml",
+                "fields": {
+                    "site": "string",
+                    "author": "root"
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\jmespath\\go-jmespath\\.travis.yml": {
+                "language": "go",
+                "sudo": false,
+                "go": [
+                    1.4
+                ],
+                "install": "go get -v -t ./...",
+                "script": "make test"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\Masterminds\\semver\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.6.x",
+                    "1.7.x",
+                    "1.8.x",
+                    "1.9.x",
+                    "1.10.x",
+                    "tip"
+                ],
+                "sudo": false,
+                "script": [
+                    "make setup",
+                    "make test"
+                ],
+                "notifications": {
+                    "webhooks": {
+                        "urls": [
+                            "https://webhooks.gitter.im/e/06e3328629952dabe3e0"
+                        ],
+                        "on_success": "change",
+                        "on_failure": "always",
+                        "on_start": "never"
+                    }
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\Masterminds\\semver\\appveyor.yml": {
+                "version": "build-{build}.{branch}",
+                "clone_folder": "C:\\gopath\\src\\github.com\\Masterminds\\semver",
+                "shallow_clone": true,
+                "environment": {
+                    "GOPATH": "C:\\gopath"
+                },
+                "platform": [
+                    "x64"
+                ],
+                "install": [
+                    "go version",
+                    "go env",
+                    "go get -u gopkg.in/alecthomas/gometalinter.v1",
+                    "set PATH=%PATH%;%GOPATH%\\bin",
+                    "gometalinter.v1.exe --install"
+                ],
+                "build_script": [
+                    "go install -v ./..."
+                ],
+                "test_script": [
+                    "gometalinter.v1 --disable-all --enable deadcode --severity deadcode:error --enable gofmt --enable gosimple --enable ineffassign --enable misspell --enable vet --tests --vendor --deadline 60s ./... || exit_code=1",
+                    "gometalinter.v1 --disable-all --enable golint --vendor --deadline 60s ./... || :",
+                    "go test -v"
+                ],
+                "deploy": false
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\Masterminds\\sprig\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.9.x",
+                    "1.10.x",
+                    "1.11.x",
+                    "tip"
+                ],
+                "sudo": false,
+                "script": [
+                    "make setup test"
+                ],
+                "notifications": {
+                    "webhooks": {
+                        "urls": [
+                            "https://webhooks.gitter.im/e/06e3328629952dabe3e0"
+                        ],
+                        "on_success": "change",
+                        "on_failure": "always",
+                        "on_start": "never"
+                    }
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\Masterminds\\sprig\\appveyor.yml": {
+                "version": "build-{build}.{branch}",
+                "clone_folder": "C:\\gopath\\src\\github.com\\Masterminds\\sprig",
+                "shallow_clone": true,
+                "environment": {
+                    "GOPATH": "C:\\gopath"
+                },
+                "platform": [
+                    "x64"
+                ],
+                "install": [
+                    "go get -u github.com/Masterminds/glide",
+                    "set PATH=%GOPATH%\\bin;%PATH%",
+                    "go version",
+                    "go env"
+                ],
+                "build_script": [
+                    "glide install",
+                    "go install ./..."
+                ],
+                "test_script": [
+                    "go test -v"
+                ],
+                "deploy": false
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mattn\\go-colorable\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "tip"
+                ],
+                "before_install": [
+                    "go get github.com/mattn/goveralls",
+                    "go get golang.org/x/tools/cmd/cover"
+                ],
+                "script": [
+                    "$HOME/gopath/bin/goveralls -repotoken xnXqRGwgW3SXIguzxf90ZSK1GPYZPaGrw"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mattn\\go-isatty\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "tip"
+                ],
+                "os": [
+                    "linux",
+                    "osx"
+                ],
+                "before_install": [
+                    "go get github.com/mattn/goveralls",
+                    "go get golang.org/x/tools/cmd/cover"
+                ],
+                "script": [
+                    "$HOME/gopath/bin/goveralls -repotoken 3gHdORO5k5ziZcWMBxnd9LrMZaJs8m9x5"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mitchellh\\cli\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    "1.8",
+                    "1.9",
+                    "1.10"
+                ],
+                "branches": {
+                    "only": [
+                        "master"
+                    ]
+                },
+                "script": "make updatedeps test testrace"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mitchellh\\copystructure\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    1.7,
+                    "tip"
+                ],
+                "script": [
+                    "go test"
+                ],
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mitchellh\\go-testing-interface\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    1.8,
+                    "1.x",
+                    "tip"
+                ],
+                "script": [
+                    "go test"
+                ],
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mitchellh\\mapstructure\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    "1.11.x",
+                    "tip"
+                ],
+                "script": [
+                    "go test"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\mitchellh\\reflectwalk\\.travis.yml": {
+                "language": "go"
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\pkg\\errors\\.travis.yml": {
+                "language": "go",
+                "go_import_path": "github.com/pkg/errors",
+                "go": [
+                    "1.4.3",
+                    "1.5.4",
+                    "1.6.2",
+                    "1.7.1",
+                    "tip"
+                ],
+                "script": [
+                    "go test -v ./..."
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\pkg\\errors\\appveyor.yml": {
+                "version": "build-{build}.{branch}",
+                "clone_folder": "C:\\gopath\\src\\github.com\\pkg\\errors",
+                "shallow_clone": true,
+                "environment": {
+                    "GOPATH": "C:\\gopath"
+                },
+                "platform": [
+                    "x64"
+                ],
+                "install": [
+                    "go version",
+                    "go env",
+                    "set PATH=C:\\msys64\\mingw64\\bin;%PATH%",
+                    "gcc --version",
+                    "g++ --version"
+                ],
+                "build_script": [
+                    "go install -v ./..."
+                ],
+                "test_script": [
+                    "set PATH=C:\\gopath\\bin;%PATH%",
+                    "go test -v ./..."
+                ],
+                "deploy": false
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\posener\\complete\\.travis.yml": {
+                "language": "go",
+                "sudo": false,
+                "go": [
+                    1.9,
+                    1.8
+                ],
+                "before_install": [
+                    "go get -u -t ./...",
+                    "go get -u gopkg.in/alecthomas/gometalinter.v1",
+                    "gometalinter.v1 --install"
+                ],
+                "script": [
+                    "gometalinter.v1 --config metalinter.json ./...",
+                    "./test.sh"
+                ],
+                "after_success": [
+                    "bash <(curl -s https://codecov.io/bash)"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\sirupsen\\logrus\\.travis.yml": {
+                "language": "go",
+                "env": [
+                    "GOMAXPROCS=4 GORACE=halt_on_error=1"
+                ],
+                "matrix": {
+                    "include": [
+                        {
+                            "go": "1.10.x",
+                            "install": [
+                                "go get github.com/stretchr/testify/assert",
+                                "go get golang.org/x/crypto/ssh/terminal",
+                                "go get golang.org/x/sys/unix",
+                                "go get golang.org/x/sys/windows"
+                            ],
+                            "script": [
+                                "go test -race -v ./..."
+                            ]
+                        },
+                        {
+                            "go": "1.11.x",
+                            "env": "GO111MODULE=on",
+                            "install": [
+                                "go mod download"
+                            ],
+                            "script": [
+                                "go test -race -v ./..."
+                            ]
+                        },
+                        {
+                            "go": "1.11.x",
+                            "env": "GO111MODULE=off",
+                            "install": [
+                                "go get github.com/stretchr/testify/assert",
+                                "go get golang.org/x/crypto/ssh/terminal",
+                                "go get golang.org/x/sys/unix",
+                                "go get golang.org/x/sys/windows"
+                            ],
+                            "script": [
+                                "go test -race -v ./..."
+                            ]
+                        },
+                        {
+                            "go": "1.10.x",
+                            "install": [
+                                "go get github.com/stretchr/testify/assert",
+                                "go get golang.org/x/crypto/ssh/terminal",
+                                "go get golang.org/x/sys/unix",
+                                "go get golang.org/x/sys/windows"
+                            ],
+                            "script": [
+                                "go test -race -v -tags appengine ./..."
+                            ]
+                        },
+                        {
+                            "go": "1.11.x",
+                            "env": "GO111MODULE=on",
+                            "install": [
+                                "go mod download"
+                            ],
+                            "script": [
+                                "go test -race -v -tags appengine ./..."
+                            ]
+                        },
+                        {
+                            "go": "1.11.x",
+                            "env": "GO111MODULE=off",
+                            "install": [
+                                "go get github.com/stretchr/testify/assert",
+                                "go get golang.org/x/crypto/ssh/terminal",
+                                "go get golang.org/x/sys/unix",
+                                "go get golang.org/x/sys/windows"
+                            ],
+                            "script": [
+                                "go test -race -v -tags appengine ./..."
+                            ]
+                        }
+                    ]
+                }
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\sirupsen\\logrus\\appveyor.yml": {
+                "version": "{build}",
+                "platform": "x64",
+                "clone_folder": "c:\\gopath\\src\\github.com\\sirupsen\\logrus",
+                "environment": {
+                    "GOPATH": "c:\\gopath"
+                },
+                "branches": {
+                    "only": [
+                        "master"
+                    ]
+                },
+                "install": [
+                    "set PATH=%GOPATH%\\bin;c:\\go\\bin;%PATH%",
+                    "go version"
+                ],
+                "build_script": [
+                    "go get -t",
+                    "go test"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\spf13\\afero\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    1.9,
+                    "1.10",
+                    "tip"
+                ],
+                "os": [
+                    "linux",
+                    "osx"
+                ],
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ],
+                    "fast_finish": true
+                },
+                "script": [
+                    "go build",
+                    "go test -race -v ./..."
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\spf13\\afero\\appveyor.yml": {
+                "version": "{build}",
+                "clone_folder": "C:\\gopath\\src\\github.com\\spf13\\afero",
+                "environment": {
+                    "GOPATH": "C:\\gopath"
+                },
+                "build_script": [
+                    {
+                        "cmd": "go version\ngo env\ngo get -v github.com/spf13/afero/...\ngo build github.com/spf13/afero"
+                    }
+                ],
+                "test_script": [
+                    {
+                        "cmd": "go test -race -v github.com/spf13/afero/..."
+                    }
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\spf13\\cobra\\.travis.yml": {
+                "language": "go",
+                "matrix": {
+                    "include": [
+                        {
+                            "go": "1.9.4"
+                        },
+                        {
+                            "go": "1.10.0"
+                        },
+                        {
+                            "go": "tip"
+                        }
+                    ],
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                },
+                "before_install": [
+                    "mkdir -p bin",
+                    "curl -Lso bin/shellcheck https://github.com/caarlos0/shellcheck-docker/releases/download/v0.4.3/shellcheck",
+                    "chmod +x bin/shellcheck"
+                ],
+                "script": [
+                    "PATH=$PATH:$PWD/bin go test -v ./...",
+                    "go build",
+                    "diff -u <(echo -n) <(gofmt -d -s .)",
+                    "if [ -z $NOVET ]; then diff -u <(echo -n) <(go tool vet . 2>&1 | grep -vE 'ExampleCommand|bash_completions.*Fprint'); fi"
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\github.com\\spf13\\pflag\\.travis.yml": {
+                "sudo": false,
+                "language": "go",
+                "go": [
+                    "1.7.3",
+                    "1.8.1",
+                    "tip"
+                ],
+                "matrix": {
+                    "allow_failures": [
+                        {
+                            "go": "tip"
+                        }
+                    ]
+                },
+                "install": [
+                    "go get github.com/golang/lint/golint",
+                    "export PATH=$GOPATH/bin:$PATH",
+                    "go install ./..."
+                ],
+                "script": [
+                    "verify/all.sh -v",
+                    "go test ./..."
+                ]
+            },
+            "chanzuckerberg/fogg\\vendor\\gopkg.in\\yaml.v2\\.travis.yml": {
+                "language": "go",
+                "go": [
+                    1.4,
+                    1.5,
+                    1.6,
+                    1.7,
+                    1.8,
+                    1.9,
+                    "tip"
+                ],
+                "go_import_path": "gopkg.in/yaml.v2"
+            }
+        }
+    }
+}

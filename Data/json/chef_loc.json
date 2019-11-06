@@ -1,0 +1,941 @@
+{
+    "adamedx": {
+        "winbox": {
+            "adamedx\\winbox\\.kitchen.yml": 16
+        }
+    },
+    "adamkrone": {
+        "chef-consul-template": {
+            "adamkrone\\chef-consul-template\\.coveralls.yml": 1,
+            "adamkrone\\chef-consul-template\\.kitchen.yml": 100,
+            "adamkrone\\chef-consul-template\\.rubocop.yml": 13,
+            "adamkrone\\chef-consul-template\\.rubocop_todo.yml": 67,
+            "adamkrone\\chef-consul-template\\.travis.yml": 13
+        }
+    },
+    "aespinosa": {
+        "cookbook-kube": {
+            "aespinosa\\cookbook-kube\\.kitchen.yml": 21,
+            "aespinosa\\cookbook-kube\\test\\unit\\.rubocop.yml": 3
+        }
+    },
+    "ajgon": {
+        "opsworks_ruby": {
+            "ajgon\\opsworks_ruby\\.fasterer.yml": 9,
+            "ajgon\\opsworks_ruby\\.kitchen.docker.yml": 4,
+            "ajgon\\opsworks_ruby\\.kitchen.yml": 214,
+            "ajgon\\opsworks_ruby\\.overcommit.yml": 71,
+            "ajgon\\opsworks_ruby\\.rubocop.yml": 16,
+            "ajgon\\opsworks_ruby\\.travis.yml": 49,
+            "ajgon\\opsworks_ruby\\docker-compose.yml": 8
+        }
+    },
+    "AnalogJ": {
+        "capsulecd": {
+            "AnalogJ\\capsulecd\\capsule.yml": 20,
+            "AnalogJ\\capsulecd\\example.capsule.yml": 180,
+            "AnalogJ\\capsulecd\\.circleci\\config.yml": 139,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\asset_configuration.yml": 6,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\compile_cmd_list_configuration.yml": 5,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\compile_cmd_simple_configuration.yml": 2,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\incorrect_configuration.yml": 4,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\pre_post_step_hook_configuration.yml": 61,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\sample_configuration.yml": 7,
+            "AnalogJ\\capsulecd\\pkg\\config\\testdata\\sample_configuration_overrides.yml": 4,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\incorrect_configuration.yml": 4,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_chef_configuration.yml": 8,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_configuration.yml": 7,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_global_configuration.yml": 23,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_node_configuration.yml": 7,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_python_configuration.yml": 8,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_repo_configuration.yml": 22,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\sample_ruby_configuration.yml": 5,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\chef_build_step.yml": 636,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\gem_build_step.yml": 653,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\gem_build_step_without_version_rb.yml": 653,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\integration_chef.yml": 1399,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\integration_node.yml": 1388,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\integration_python.yml": 1388,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\integration_ruby.yml": 1377,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\node_build_step.yml": 647,
+            "AnalogJ\\capsulecd\\pkg\\testdata\\vcr_cassettes\\pip_build_step.yml": 653
+        }
+    },
+    "ANXS": {
+        "postgresql": {
+            "ANXS\\postgresql\\.travis.yml": 35,
+            "ANXS\\postgresql\\defaults\\main.yml": 852,
+            "ANXS\\postgresql\\handlers\\main.yml": 7,
+            "ANXS\\postgresql\\meta\\main.yml": 36,
+            "ANXS\\postgresql\\tasks\\check_pg_version_mismatch.yml": 31,
+            "ANXS\\postgresql\\tasks\\configure.yml": 224,
+            "ANXS\\postgresql\\tasks\\databases.yml": 93,
+            "ANXS\\postgresql\\tasks\\extensions.yml": 8,
+            "ANXS\\postgresql\\tasks\\fdw.yml": 25,
+            "ANXS\\postgresql\\tasks\\install_apt.yml": 55,
+            "ANXS\\postgresql\\tasks\\install_dnf.yml": 32,
+            "ANXS\\postgresql\\tasks\\install_yum.yml": 91,
+            "ANXS\\postgresql\\tasks\\main.yml": 47,
+            "ANXS\\postgresql\\tasks\\monit.yml": 6,
+            "ANXS\\postgresql\\tasks\\schemas.yml": 16,
+            "ANXS\\postgresql\\tasks\\users.yml": 20,
+            "ANXS\\postgresql\\tasks\\users_privileges.yml": 16,
+            "ANXS\\postgresql\\tasks\\extensions\\contrib.yml": 27,
+            "ANXS\\postgresql\\tasks\\extensions\\dev_headers.yml": 32,
+            "ANXS\\postgresql\\tasks\\extensions\\postgis.yml": 33,
+            "ANXS\\postgresql\\tests\\playbook.yml": 9,
+            "ANXS\\postgresql\\tests\\vars.yml": 30,
+            "ANXS\\postgresql\\tests\\docker\\site.yml": 42,
+            "ANXS\\postgresql\\tests\\docker\\group_vars\\all.yml": 9,
+            "ANXS\\postgresql\\tests\\docker\\group_vars\\postgresql.yml": 44,
+            "ANXS\\postgresql\\vars\\Debian.yml": 9,
+            "ANXS\\postgresql\\vars\\empty.yml": 2,
+            "ANXS\\postgresql\\vars\\RedHat.yml": 19,
+            "ANXS\\postgresql\\vars\\xenial.yml": 10
+        }
+    },
+    "atheiman": {
+        "better-chef-rundeck": {
+            "atheiman\\better-chef-rundeck\\.rubocop.yml": 2,
+            "atheiman\\better-chef-rundeck\\.travis.yml": 11,
+            "atheiman\\better-chef-rundeck\\spec\\chef-fixtures\\chef-objects.yml": 50,
+            "atheiman\\better-chef-rundeck\\spec\\chef-fixtures\\chef-objects_temp.yml": 42
+        }
+    },
+    "atomic-penguin": {
+        "cookbook-krb5": {
+            "atomic-penguin\\cookbook-krb5\\.codeclimate.yml": 19,
+            "atomic-penguin\\cookbook-krb5\\.kitchen.yml": 86,
+            "atomic-penguin\\cookbook-krb5\\.rubocop.yml": 13,
+            "atomic-penguin\\cookbook-krb5\\.travis.yml": 39
+        },
+        "cookbook-nfs": {
+            "atomic-penguin\\cookbook-nfs\\.kitchen.yml": 29,
+            "atomic-penguin\\cookbook-nfs\\.travis.yml": 8,
+            "atomic-penguin\\cookbook-nfs\\rubocop-todo.yml": 16
+        }
+    },
+    "aws": {
+        "aws-parallelcluster-cookbook": {
+            "aws\\aws-parallelcluster-cookbook\\.kitchen.cloud.yml": 332,
+            "aws\\aws-parallelcluster-cookbook\\.kitchen.yml": 184,
+            "aws\\aws-parallelcluster-cookbook\\.rubocop.yml": 14,
+            "aws\\aws-parallelcluster-cookbook\\.travis.yml": 8
+        },
+        "opsworks-cookbooks": {
+            "aws\\opsworks-cookbooks\\s3_file\\.kitchen.yml": 28
+        }
+    },
+    "bdwyertech": {
+        "chef-wildfly": {
+            "bdwyertech\\chef-wildfly\\.gitlab-ci.yml": 37,
+            "bdwyertech\\chef-wildfly\\.kitchen.dokken.yml": 117,
+            "bdwyertech\\chef-wildfly\\.kitchen.yml": 0,
+            "bdwyertech\\chef-wildfly\\.rubocop.yml": 2,
+            "bdwyertech\\chef-wildfly\\.travis.yml": 65,
+            "bdwyertech\\chef-wildfly\\.delivery\\build_cookbook\\.kitchen.yml": 21
+        }
+    },
+    "berkshelf": {
+        "berkshelf": {
+            "berkshelf\\berkshelf\\.rubocop.yml": 12,
+            "berkshelf\\berkshelf\\.travis.yml": 73,
+            "berkshelf\\berkshelf\\appveyor.yml": 35,
+            "berkshelf\\berkshelf\\.github\\lock.yml": 1,
+            "berkshelf\\berkshelf\\spec\\fixtures\\cookbooks\\example_cookbook\\.kitchen.yml": 26
+        }
+    },
+    "bflad": {
+        "chef-stash": {
+            "bflad\\chef-stash\\.kitchen.yml": 67,
+            "bflad\\chef-stash\\.rubocop.yml": 40,
+            "bflad\\chef-stash\\.travis.yml": 10
+        }
+    },
+    "bloomberg": {
+        "chef-bach": {
+            "bloomberg\\chef-bach\\.kitchen.yml": 65,
+            "bloomberg\\chef-bach\\.rubocop.yml": 3,
+            "bloomberg\\chef-bach\\.travis.yml": 18,
+            "bloomberg\\chef-bach\\cookbooks\\ambari\\.kitchen.yml": 60,
+            "bloomberg\\chef-bach\\cookbooks\\ambari_metrics\\.kitchen.yml": 37,
+            "bloomberg\\chef-bach\\cookbooks\\bach_ambari\\.kitchen.yml": 50,
+            "bloomberg\\chef-bach\\cookbooks\\bach_backup\\files\\default\\hdfs\\jobs.yml": 34,
+            "bloomberg\\chef-bach\\cookbooks\\bach_repository\\.kitchen.yml": 39,
+            "bloomberg\\chef-bach\\cookbooks\\backup\\files\\default\\hdfs\\jobs.yml": 24,
+            "bloomberg\\chef-bach\\cookbooks\\smoke-tests\\.kitchen.yml": 16
+        },
+        "chef-bcpc": {
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\converge-bootstrap.yml": 38,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\create-operations-user-on-bootstrap.yml": 23,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\enroll-all-nodes-in-cobbler.yml": 29,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\tasks-configure-chef-client.yml": 74,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\tasks-configure-chef-server.yml": 104,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\tasks-configure-package-serving.yml": 171,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\tasks-create-bootstrap-users.yml": 63,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\bootstrap_deployment\\tasks-create-directory-structure.yml": 48,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\common_playbooks\\destructive_warning.yml": 27,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\common_playbooks\\validate_environment.yml": 173,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\erase-data-disks.yml": 37,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\power-cycle-cluster.yml": 89,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\restart-target-nodes.yml": 208,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\set-pxe-boot-and-reboot.yml": 41,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\start-target-nodes.yml": 198,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\hardware_management\\stop-target-nodes.yml": 132,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\assign-roles-to-target.yml": 4,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\chef-bootstrap.yml": 4,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\chef-cluster.yml": 5,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\chef-target.yml": 4,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\create-operations-user-on-cluster.yml": 5,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\create-operations-user-on-target.yml": 5,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\enroll-target-in-chef-server.yml": 4,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\prepare-deployed.yml": 11,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\remove-target-from-chef-server.yml": 51,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\tasks-assign-roles-to-target.yml": 52,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\tasks-chef-target.yml": 13,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\tasks-create-operations-user-on-target.yml": 19,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\tasks-enroll-target-in-chef-server.yml": 68,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\tasks-prepare-deployed.yml": 126,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\upgrade-headnode-software.yml": 347,
+            "bloomberg\\chef-bcpc\\bootstrap\\ansible_scripts\\software_deployment\\upgrade-worknode-software.yml": 61
+        }
+    },
+    "cassianoleal": {
+        "vagrant-butcher": {
+            "cassianoleal\\vagrant-butcher\\.travis.yml": 4
+        }
+    },
+    "cdapio": {
+        "hadoop_cookbook": {
+            "cdapio\\hadoop_cookbook\\.codeclimate.yml": 19,
+            "cdapio\\hadoop_cookbook\\.kitchen.dokken.yml": 65,
+            "cdapio\\hadoop_cookbook\\.kitchen.yml": 52,
+            "cdapio\\hadoop_cookbook\\.travis.yml": 40,
+            "cdapio\\hadoop_cookbook\\test\\integration\\default\\inspec.yml": 6
+        }
+    },
+    "chef": {
+        "chef": {
+            "chef\\chef\\.rubocop.yml": 34,
+            "chef\\chef\\.travis.yml": 376,
+            "chef\\chef\\appveyor.yml": 78,
+            "chef\\chef\\.expeditor\\config.yml": 143,
+            "chef\\chef\\.github\\lock.yml": 1,
+            "chef\\chef\\kitchen-tests\\kitchen.travis.yml": 120,
+            "chef\\chef\\kitchen-tests\\kitchen.yml": 40,
+            "chef\\chef\\omnibus\\kitchen.yml": 144
+        },
+        "chef-dk": {
+            "chef\\chef-dk\\.rubocop.yml": 13,
+            "chef\\chef-dk\\.travis.yml": 50,
+            "chef\\chef-dk\\appveyor.yml": 48,
+            "chef\\chef-dk\\.expeditor\\config.yml": 268,
+            "chef\\chef-dk\\.github\\lock.yml": 1,
+            "chef\\chef-dk\\lib\\chef-dk\\skeletons\\code_generator\\files\\default\\build_cookbook\\.kitchen.yml": 21,
+            "chef\\chef-dk\\omnibus\\kitchen.yml": 94,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\cookbook_cache\\baz-f59ee7a5bca6a4e606b67f7f856b768d847c39bb\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\cookbook_cache\\dep_of_bar-1.2.3\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\cookbook_cache\\foo-1.0.0\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\example_cookbook\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\example_cookbook_metadata_json_only\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\example_cookbook_no_metadata\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\local_path_cookbooks\\local-cookbook\\.kitchen.yml": 16,
+            "chef\\chef-dk\\spec\\unit\\fixtures\\local_path_cookbooks\\noignore-f59ee7a5bca6a4e606b67f7f856b768d847c39bb\\.kitchen.yml": 16
+        },
+        "chef-load": {},
+        "chef-provisioning": {
+            "chef\\chef-provisioning\\.travis.yml": 18,
+            "chef\\chef-provisioning\\.expeditor\\config.yml": 40,
+            "chef\\chef-provisioning\\.github\\lock.yml": 1
+        },
+        "chef-provisioning-aws": {
+            "chef\\chef-provisioning-aws\\.rubocop.yml": 64,
+            "chef\\chef-provisioning-aws\\.travis.yml": 32,
+            "chef\\chef-provisioning-aws\\.expeditor\\config.yml": 40,
+            "chef\\chef-provisioning-aws\\.github\\lock.yml": 1
+        },
+        "chef-provisioning-fog": {
+            "chef\\chef-provisioning-fog\\.rubocop.yml": 54,
+            "chef\\chef-provisioning-fog\\.travis.yml": 22,
+            "chef\\chef-provisioning-fog\\.expeditor\\config.yml": 40,
+            "chef\\chef-provisioning-fog\\.github\\lock.yml": 1
+        },
+        "chef-server": {
+            "chef\\chef-server\\.license_scout.yml": 198,
+            "chef\\chef-server\\.travis.yml": 158,
+            "chef\\chef-server\\docker-compose.yml": 102,
+            "chef\\chef-server\\.expeditor\\config.yml": 159,
+            "chef\\chef-server\\.expeditor\\release.omnibus.yml": 21,
+            "chef\\chef-server\\.expeditor\\verify.pipeline.yml": 39,
+            "chef\\chef-server\\dev\\defaults.yml": 319,
+            "chef\\chef-server\\inspec\\chef-server-smoke\\inspec.yml": 8,
+            "chef\\chef-server\\omnibus\\kitchen.yml": 43,
+            "chef\\chef-server\\omnibus\\files\\private-chef-cookbooks\\private-chef\\.rubocop.yml": 32,
+            "chef\\chef-server\\src\\oc-id\\config\\database.yml": 19,
+            "chef\\chef-server\\src\\oc-id\\config\\newrelic.yml": 6,
+            "chef\\chef-server\\src\\oc-id\\config\\settings.yml": 11,
+            "chef\\chef-server\\src\\oc-id\\config\\locales\\doorkeeper.en.yml": 74,
+            "chef\\chef-server\\src\\oc-id\\config\\locales\\en.yml": 52,
+            "chef\\chef-server\\src\\oc-id\\config\\settings\\development.yml": 1,
+            "chef\\chef-server\\src\\oc-id\\config\\settings\\production.yml": 3,
+            "chef\\chef-server\\src\\oc-id\\config\\settings\\test.yml": 3,
+            "chef\\chef-server\\src\\oc-id\\habitat\\config\\database.yml": 21,
+            "chef\\chef-server\\src\\oc-id\\habitat\\config\\production.yml": 11
+        },
+        "chef-vault": {
+            "chef\\chef-vault\\.rubocop.yml": 20,
+            "chef\\chef-vault\\.travis.yml": 20,
+            "chef\\chef-vault\\appveyor.yml": 32,
+            "chef\\chef-vault\\.expeditor\\config.yml": 41,
+            "chef\\chef-vault\\.github\\lock.yml": 1
+        },
+        "chef-workstation": {
+            "chef\\chef-workstation\\.expeditor\\config.yml": 61,
+            "chef\\chef-workstation\\.expeditor\\verify.pipeline.yml": 14,
+            "chef\\chef-workstation\\.github\\lock.yml": 1,
+            "chef\\chef-workstation\\omnibus\\.kitchen.yml": 38
+        },
+        "chef-zero": {
+            "chef\\chef-zero\\.rubocop.yml": 2,
+            "chef\\chef-zero\\.travis.yml": 43,
+            "chef\\chef-zero\\.expeditor\\config.yml": 41
+        },
+        "cheffish": {
+            "chef\\cheffish\\.travis.yml": 31,
+            "chef\\cheffish\\.expeditor\\config.yml": 41
+        },
+        "chefstyle": {
+            "chef\\chefstyle\\.travis.yml": 18,
+            "chef\\chefstyle\\.expeditor\\config.yml": 41,
+            "chef\\chefstyle\\.github\\lock.yml": 1,
+            "chef\\chefstyle\\config\\chefstyle.yml": 646,
+            "chef\\chefstyle\\config\\default.yml": 4,
+            "chef\\chefstyle\\config\\disable_all.yml": 861,
+            "chef\\chefstyle\\config\\upstream.yml": 4312
+        },
+        "cookstyle": {
+            "chef\\cookstyle\\.travis.yml": 15,
+            "chef\\cookstyle\\.expeditor\\config.yml": 41,
+            "chef\\cookstyle\\.github\\lock.yml": 1,
+            "chef\\cookstyle\\config\\cookstyle.yml": 696,
+            "chef\\cookstyle\\config\\default.yml": 4,
+            "chef\\cookstyle\\config\\disabled.yml": 128,
+            "chef\\cookstyle\\config\\disable_all.yml": 837,
+            "chef\\cookstyle\\config\\enabled.yml": 2068,
+            "chef\\cookstyle\\config\\upstream.yml": 4319
+        },
+        "delivery-cli": {
+            "chef\\delivery-cli\\.expeditor\\config.yml": 27,
+            "chef\\delivery-cli\\.expeditor\\verify.pipeline.yml": 53
+        },
+        "kitchen-vcenter": {
+            "chef\\kitchen-vcenter\\.rubocop.yml": 5,
+            "chef\\kitchen-vcenter\\.travis.yml": 17,
+            "chef\\kitchen-vcenter\\.expeditor\\config.yml": 44
+        },
+        "knife-azure": {
+            "chef\\knife-azure\\.rubocop.yml": 87,
+            "chef\\knife-azure\\.travis.yml": 23,
+            "chef\\knife-azure\\.expeditor\\config.yml": 41
+        },
+        "knife-ec2": {
+            "chef\\knife-ec2\\.rubocop.yml": 30,
+            "chef\\knife-ec2\\.travis.yml": 22,
+            "chef\\knife-ec2\\.expeditor\\config.yml": 41
+        },
+        "knife-google": {
+            "chef\\knife-google\\.travis.yml": 27,
+            "chef\\knife-google\\.expeditor\\config.yml": 41
+        },
+        "knife-openstack": {
+            "chef\\knife-openstack\\.rubocop.yml": 29,
+            "chef\\knife-openstack\\.travis.yml": 22,
+            "chef\\knife-openstack\\.expeditor\\config.yml": 43
+        },
+        "knife-push": {
+            "chef\\knife-push\\.rubocop.yml": 12,
+            "chef\\knife-push\\.travis.yml": 20,
+            "chef\\knife-push\\.expeditor\\config.yml": 41
+        },
+        "knife-rackspace": {
+            "chef\\knife-rackspace\\.travis.yml": 53,
+            "chef\\knife-rackspace\\.expeditor\\config.yml": 41,
+            "chef\\knife-rackspace\\spec\\cassettes\\v1\\should_list_images.yml": 191,
+            "chef\\knife-rackspace\\spec\\cassettes\\v1\\should_list_server_flavors.yml": 901,
+            "chef\\knife-rackspace\\spec\\cassettes\\v2\\should_list_images.yml": 1562,
+            "chef\\knife-rackspace\\spec\\cassettes\\v2\\should_list_server_flavors.yml": 1726
+        },
+        "knife-tidy": {
+            "chef\\knife-tidy\\.rubocop.yml": 9,
+            "chef\\knife-tidy\\.travis.yml": 21,
+            "chef\\knife-tidy\\.expeditor\\config.yml": 41
+        },
+        "knife-vsphere": {
+            "chef\\knife-vsphere\\.hound.yml": 2,
+            "chef\\knife-vsphere\\.rubocop.yml": 37,
+            "chef\\knife-vsphere\\.travis.yml": 24,
+            "chef\\knife-vsphere\\.expeditor\\config.yml": 41,
+            "chef\\knife-vsphere\\.github\\lock.yml": 1
+        },
+        "knife-windows": {
+            "chef\\knife-windows\\.travis.yml": 32,
+            "chef\\knife-windows\\appveyor.yml": 35,
+            "chef\\knife-windows\\.expeditor\\config.yml": 43
+        },
+        "mixlib-config": {
+            "chef\\mixlib-config\\.rubocop.yml": 5,
+            "chef\\mixlib-config\\.travis.yml": 25,
+            "chef\\mixlib-config\\.expeditor\\config.yml": 41
+        },
+        "mixlib-log": {
+            "chef\\mixlib-log\\.rubocop.yml": 3,
+            "chef\\mixlib-log\\.travis.yml": 27,
+            "chef\\mixlib-log\\appveyor.yml": 41,
+            "chef\\mixlib-log\\.expeditor\\config.yml": 41
+        },
+        "ohai": {
+            "chef\\ohai\\.rubocop.yml": 16,
+            "chef\\ohai\\.travis.yml": 32,
+            "chef\\ohai\\appveyor.yml": 47,
+            "chef\\ohai\\.expeditor\\config.yml": 48,
+            "chef\\ohai\\.github\\lock.yml": 1
+        },
+        "opscode-pushy-server": {
+            "chef\\opscode-pushy-server\\.travis.yml": 43,
+            "chef\\opscode-pushy-server\\.expeditor\\config.yml": 55,
+            "chef\\opscode-pushy-server\\.expeditor\\release.omnibus.yml": 13,
+            "chef\\opscode-pushy-server\\oc-pushy-pedant\\dev\\push-setup\\.kitchen.yml": 32,
+            "chef\\opscode-pushy-server\\omnibus\\.kitchen.yml": 46
+        },
+        "supermarket": {
+            "chef\\supermarket\\.inch.yml": 3,
+            "chef\\supermarket\\.travis.yml": 176,
+            "chef\\supermarket\\.expeditor\\config.yml": 78,
+            "chef\\supermarket\\.expeditor\\release.omnibus.yml": 15,
+            "chef\\supermarket\\inspec\\supermarket-smoke\\inspec.yml": 8,
+            "chef\\supermarket\\omnibus\\.kitchen.yml": 31,
+            "chef\\supermarket\\omnibus\\cookbooks\\omnibus-supermarket\\.kitchen.yml": 32,
+            "chef\\supermarket\\omnibus\\cookbooks\\omnibus-supermarket\\.rubocop.yml": 2,
+            "chef\\supermarket\\omnibus\\cookbooks\\omnibus-supermarket\\test\\integration\\default\\inspec\\inspec.yml": 2,
+            "chef\\supermarket\\src\\supermarket\\.rubocop.yml": 54,
+            "chef\\supermarket\\src\\supermarket\\.rubocop_todo.yml": 162,
+            "chef\\supermarket\\src\\supermarket\\docker-compose.yml": 12,
+            "chef\\supermarket\\src\\supermarket\\config\\cable.yml": 9,
+            "chef\\supermarket\\src\\supermarket\\config\\database.yml": 16,
+            "chef\\supermarket\\src\\supermarket\\config\\license_finder.yml": 11,
+            "chef\\supermarket\\src\\supermarket\\config\\newrelic.yml": 227,
+            "chef\\supermarket\\src\\supermarket\\config\\secrets.yml": 22,
+            "chef\\supermarket\\src\\supermarket\\config\\locales\\en.yml": 157,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\.rubocop.yml": 40,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\.rubocop_todo.yml": 24,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\config\\locales\\en.yml": 25,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\spec\\dummy\\config\\database.yml": 25,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\spec\\dummy\\config\\secrets.yml": 22,
+            "chef\\supermarket\\src\\supermarket\\engines\\fieri\\spec\\dummy\\config\\locales\\en.yml": 5,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\cla_validation_worker_missing_repo.yml": 71,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\import_unknown_pull_request_commit_authors.yml": 94,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\oauth_token_refresh_with_bad_token.yml": 60,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\oauth_token_refresh_with_good_token.yml": 56,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_adds_comment.yml": 531,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_assigns_maintainer.yml": 158,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_authorized_from_start.yml": 473,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_leaves_two_success_comments.yml": 934,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_no_double_comment.yml": 999,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_removes_label.yml": 413,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_setup.yml": 2765,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_updates_comment.yml": 689,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\pull_request_annotation_when_authors_become_authorized.yml": 1117,
+            "chef\\supermarket\\src\\supermarket\\spec\\vcr_cassettes\\sitemap_refresh_worker.yml": 120
+        }
+    },
+    "chef-boneyard": {
+        "activemq": {
+            "chef-boneyard\\activemq\\.kitchen.dokken.yml": 68,
+            "chef-boneyard\\activemq\\.kitchen.yml": 30,
+            "chef-boneyard\\activemq\\.travis.yml": 48
+        },
+        "bluepill": {
+            "chef-boneyard\\bluepill\\.travis.yml": 41,
+            "chef-boneyard\\bluepill\\kitchen.dokken.yml": 69,
+            "chef-boneyard\\bluepill\\kitchen.yml": 24
+        },
+        "build-essential": {
+            "chef-boneyard\\build-essential\\.kitchen.dokken.yml": 82,
+            "chef-boneyard\\build-essential\\.kitchen.yml": 46,
+            "chef-boneyard\\build-essential\\.travis.yml": 47
+        },
+        "vagrant-omnibus": {
+            "chef-boneyard\\vagrant-omnibus\\.travis.yml": 14,
+            "chef-boneyard\\vagrant-omnibus\\locales\\en.yml": 11
+        }
+    },
+    "chef-cft": {
+        "bjc": {
+            "chef-cft\\bjc\\wombat.yml": 81,
+            "chef-cft\\bjc\\.delivery\\build-cookbook\\.kitchen.yml": 19,
+            "chef-cft\\bjc\\cookbooks\\bass_web\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\bass_web\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\cookbooks\\bjc-ecommerce\\.kitchen.yml": 45,
+            "chef-cft\\bjc\\cookbooks\\bjc-ecommerce\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\cookbooks\\bjc-ecommerce\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\bjc_automate\\.kitchen-ec2.yml": 48,
+            "chef-cft\\bjc\\cookbooks\\bjc_automate\\.kitchen.yml": 37,
+            "chef-cft\\bjc\\cookbooks\\bjc_automate\\.rubocop.yml": 22,
+            "chef-cft\\bjc\\cookbooks\\bjc_automate\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_automate\\test\\integration\\default\\inspec.yml": 10,
+            "chef-cft\\bjc\\cookbooks\\bjc_bass\\.kitchen.yml": 31,
+            "chef-cft\\bjc\\cookbooks\\bjc_bass\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\cookbooks\\bjc_build_node\\.kitchen.yml": 45,
+            "chef-cft\\bjc\\cookbooks\\bjc_build_node\\.rubocop.yml": 22,
+            "chef-cft\\bjc\\cookbooks\\bjc_build_node\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_chef_server\\.kitchen.yml": 51,
+            "chef-cft\\bjc\\cookbooks\\bjc_chef_server\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\cookbooks\\bjc_chef_server\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_chef_server\\test\\integration\\default\\inspec.yml": 10,
+            "chef-cft\\bjc\\cookbooks\\bjc_community\\.kitchen.yml": 26,
+            "chef-cft\\bjc\\cookbooks\\bjc_community\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\bjc_compliance\\.kitchen-azure.yml": 47,
+            "chef-cft\\bjc\\cookbooks\\bjc_compliance\\.kitchen.yml": 50,
+            "chef-cft\\bjc\\cookbooks\\bjc_compliance\\.rubocop.yml": 22,
+            "chef-cft\\bjc\\cookbooks\\bjc_compliance\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_infranodes\\.kitchen.yml": 48,
+            "chef-cft\\bjc\\cookbooks\\bjc_infranodes\\.rubocop.yml": 24,
+            "chef-cft\\bjc\\cookbooks\\bjc_infranodes\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_jenkins\\.kitchen.yml": 43,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\.kitchen-azure.yml": 45,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\.kitchen-ec2.yml": 55,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\.kitchen.yml": 44,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\.rubocop.yml": 24,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\files\\default\\kitchen_linux.yml": 47,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\files\\default\\kitchen_windows.yml": 36,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\test\\fixtures\\cookbooks\\test\\.kitchen.yml": 20,
+            "chef-cft\\bjc\\cookbooks\\bjc_workstation\\test\\integration\\default\\inspec.yml": 10,
+            "chef-cft\\bjc\\cookbooks\\cm_demo\\.kitchen.yml": 26,
+            "chef-cft\\bjc\\cookbooks\\cm_demo\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\dca_audit_baseline\\.kitchen.yml": 26,
+            "chef-cft\\bjc\\cookbooks\\dca_audit_baseline\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\dca_demo\\.kitchen.yml": 43,
+            "chef-cft\\bjc\\cookbooks\\dca_demo\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\dca_hardening_linux\\.kitchen.yml": 26,
+            "chef-cft\\bjc\\cookbooks\\dca_hardening_linux\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\dca_hardening_windows\\.kitchen.yml": 26,
+            "chef-cft\\bjc\\cookbooks\\dca_hardening_windows\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\emea_demo_remediation\\.kitchen.yml": 46,
+            "chef-cft\\bjc\\cookbooks\\planex-ecommerce\\.kitchen.yml": 34,
+            "chef-cft\\bjc\\cookbooks\\planex-ecommerce\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\cookbooks\\planex-ecommerce\\.delivery\\build_cookbook\\.kitchen.yml": 21,
+            "chef-cft\\bjc\\cookbooks\\site-config\\.kitchen.yml": 31,
+            "chef-cft\\bjc\\cookbooks\\site-config\\.rubocop.yml": 23,
+            "chef-cft\\bjc\\profiles\\apache_webserver\\inspec.yml": 10,
+            "chef-cft\\bjc\\profiles\\linux_baseline_wrapper\\inspec.yml": 12,
+            "chef-cft\\bjc\\profiles\\planex_validate\\inspec.yml": 8,
+            "chef-cft\\bjc\\profiles\\windows_baseline_wrapper\\inspec.yml": 12
+        }
+    },
+    "chef-cookbooks": {
+        "aix": {
+            "chef-cookbooks\\aix\\.rubocop.yml": 52,
+            "chef-cookbooks\\aix\\.travis.yml": 13,
+            "chef-cookbooks\\aix\\kitchen.yml": 24
+        },
+        "apt": {
+            "chef-cookbooks\\apt\\.travis.yml": 53,
+            "chef-cookbooks\\apt\\kitchen.dokken.yml": 45,
+            "chef-cookbooks\\apt\\kitchen.yml": 61
+        },
+        "ark": {
+            "chef-cookbooks\\ark\\.travis.yml": 43,
+            "chef-cookbooks\\ark\\kitchen.dokken.yml": 72,
+            "chef-cookbooks\\ark\\kitchen.yml": 47
+        },
+        "audit": {
+            "chef-cookbooks\\audit\\.kitchen.yml": 196,
+            "chef-cookbooks\\audit\\.rubocop.yml": 10,
+            "chef-cookbooks\\audit\\.travis.yml": 56,
+            "chef-cookbooks\\audit\\kitchen.vagrant.yml": 43,
+            "chef-cookbooks\\audit\\examples\\automate_win\\.kitchen.yml": 17,
+            "chef-cookbooks\\audit\\examples\\compliance\\.kitchen.linux.yml": 38,
+            "chef-cookbooks\\audit\\examples\\compliance\\.kitchen.win.yml": 35,
+            "chef-cookbooks\\audit\\examples\\profile_upload\\.kitchen.yml": 28,
+            "chef-cookbooks\\audit\\examples\\wrapper_audit\\.kitchen.yml": 49,
+            "chef-cookbooks\\audit\\test\\kitchen-automate\\.kitchen.yml": 44
+        },
+        "aws": {
+            "chef-cookbooks\\aws\\.rubocop.yml": 23,
+            "chef-cookbooks\\aws\\.travis.yml": 29,
+            "chef-cookbooks\\aws\\kitchen.yml": 120
+        },
+        "chef-client": {
+            "chef-cookbooks\\chef-client\\.travis.yml": 63,
+            "chef-cookbooks\\chef-client\\kitchen.dokken.yml": 96,
+            "chef-cookbooks\\chef-client\\kitchen.yml": 131
+        },
+        "chef-ingredient": {
+            "chef-cookbooks\\chef-ingredient\\.kitchen.appveyor.yml": 19,
+            "chef-cookbooks\\chef-ingredient\\.travis.yml": 44,
+            "chef-cookbooks\\chef-ingredient\\appveyor.yml": 43,
+            "chef-cookbooks\\chef-ingredient\\kitchen.dokken.yml": 78,
+            "chef-cookbooks\\chef-ingredient\\kitchen.yml": 107
+        },
+        "chef-server": {
+            "chef-cookbooks\\chef-server\\.travis.yml": 39,
+            "chef-cookbooks\\chef-server\\kitchen.dokken.yml": 59,
+            "chef-cookbooks\\chef-server\\kitchen.yml": 35
+        },
+        "chef-splunk": {
+            "chef-cookbooks\\chef-splunk\\.rubocop.yml": 5,
+            "chef-cookbooks\\chef-splunk\\.travis.yml": 41,
+            "chef-cookbooks\\chef-splunk\\kitchen.dokken.yml": 249,
+            "chef-cookbooks\\chef-splunk\\kitchen.yml": 163
+        },
+        "chef-vault": {
+            "chef-cookbooks\\chef-vault\\.travis.yml": 26,
+            "chef-cookbooks\\chef-vault\\kitchen.yml": 31
+        },
+        "chef_client_updater": {
+            "chef-cookbooks\\chef_client_updater\\.travis.yml": 95,
+            "chef-cookbooks\\chef_client_updater\\kitchen.dokken.yml": 56,
+            "chef-cookbooks\\chef_client_updater\\kitchen.yml": 86
+        },
+        "cron": {
+            "chef-cookbooks\\cron\\.rubocop.yml": 3,
+            "chef-cookbooks\\cron\\.travis.yml": 57,
+            "chef-cookbooks\\cron\\kitchen.dokken.yml": 73,
+            "chef-cookbooks\\cron\\kitchen.yml": 36
+        },
+        "docker": {
+            "chef-cookbooks\\docker\\.travis.yml": 51,
+            "chef-cookbooks\\docker\\kitchen.yml": 175
+        },
+        "dynect": {
+            "chef-cookbooks\\dynect\\.travis.yml": 42,
+            "chef-cookbooks\\dynect\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\dynect\\kitchen.yml": 26
+        },
+        "elixir": {
+            "chef-cookbooks\\elixir\\.travis.yml": 38,
+            "chef-cookbooks\\elixir\\kitchen.dokken.yml": 82,
+            "chef-cookbooks\\elixir\\kitchen.yml": 39
+        },
+        "erlang": {
+            "chef-cookbooks\\erlang\\.travis.yml": 61,
+            "chef-cookbooks\\erlang\\kitchen.dokken.yml": 99,
+            "chef-cookbooks\\erlang\\kitchen.yml": 50
+        },
+        "fail2ban": {
+            "chef-cookbooks\\fail2ban\\.travis.yml": 41,
+            "chef-cookbooks\\fail2ban\\kitchen.dokken.yml": 73,
+            "chef-cookbooks\\fail2ban\\kitchen.yml": 27
+        },
+        "freebsd": {
+            "chef-cookbooks\\freebsd\\.travis.yml": 13,
+            "chef-cookbooks\\freebsd\\kitchen.yml": 19
+        },
+        "git": {
+            "chef-cookbooks\\git\\.travis.yml": 52,
+            "chef-cookbooks\\git\\kitchen.dokken.yml": 75,
+            "chef-cookbooks\\git\\kitchen.yml": 53
+        },
+        "habitat": {
+            "chef-cookbooks\\habitat\\.travis.yml": 57,
+            "chef-cookbooks\\habitat\\kitchen.dokken.yml": 70,
+            "chef-cookbooks\\habitat\\kitchen.yml": 67,
+            "chef-cookbooks\\habitat\\.expeditor\\config.yml": 12
+        },
+        "homebrew": {
+            "chef-cookbooks\\homebrew\\.travis.yml": 26,
+            "chef-cookbooks\\homebrew\\kitchen.yml": 18
+        },
+        "iis": {
+            "chef-cookbooks\\iis\\.rubocop.yml": 20,
+            "chef-cookbooks\\iis\\appveyor.yml": 38,
+            "chef-cookbooks\\iis\\kitchen.appveyor.yml": 53,
+            "chef-cookbooks\\iis\\kitchen.yml": 71,
+            "chef-cookbooks\\iis\\test\\integration\\app\\inspec.yml": 6,
+            "chef-cookbooks\\iis\\test\\integration\\module\\inspec.yml": 6,
+            "chef-cookbooks\\iis\\test\\integration\\pool\\inspec.yml": 8,
+            "chef-cookbooks\\iis\\test\\integration\\root\\inspec.yml": 6,
+            "chef-cookbooks\\iis\\test\\integration\\section\\inspec.yml": 6,
+            "chef-cookbooks\\iis\\test\\integration\\vdir\\inspec.yml": 6
+        },
+        "iptables": {
+            "chef-cookbooks\\iptables\\.travis.yml": 13,
+            "chef-cookbooks\\iptables\\kitchen.yml": 54
+        },
+        "jenkins": {
+            "chef-cookbooks\\jenkins\\.travis.yml": 46,
+            "chef-cookbooks\\jenkins\\kitchen.dokken.yml": 73,
+            "chef-cookbooks\\jenkins\\kitchen.yml": 116,
+            "chef-cookbooks\\jenkins\\test\\integration\\authentication_private_key\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\authentication_username_password\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\helpers\\jenkins_inspec\\inspec.yml": 8,
+            "chef-cookbooks\\jenkins\\test\\integration\\jenkins_proxy_config\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\jenkins_proxy_remove\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\jenkins_smoke\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\smoke_package_current\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\smoke_package_latest\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\smoke_package_stable\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\smoke_war_latest\\inspec.yml": 11,
+            "chef-cookbooks\\jenkins\\test\\integration\\smoke_war_stable\\inspec.yml": 11
+        },
+        "keepalived": {
+            "chef-cookbooks\\keepalived\\.travis.yml": 39,
+            "chef-cookbooks\\keepalived\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\keepalived\\kitchen.yml": 21
+        },
+        "lvm": {
+            "chef-cookbooks\\lvm\\.travis.yml": 13,
+            "chef-cookbooks\\lvm\\kitchen.yml": 47
+        },
+        "maven": {
+            "chef-cookbooks\\maven\\.travis.yml": 40,
+            "chef-cookbooks\\maven\\kitchen.dokken.yml": 71,
+            "chef-cookbooks\\maven\\kitchen.yml": 23
+        },
+        "memcached": {
+            "chef-cookbooks\\memcached\\.travis.yml": 53,
+            "chef-cookbooks\\memcached\\kitchen.dokken.yml": 75,
+            "chef-cookbooks\\memcached\\kitchen.yml": 31
+        },
+        "ntp": {
+            "chef-cookbooks\\ntp\\.travis.yml": 44,
+            "chef-cookbooks\\ntp\\kitchen.dokken.yml": 77,
+            "chef-cookbooks\\ntp\\kitchen.yml": 57
+        },
+        "ohai": {
+            "chef-cookbooks\\ohai\\.travis.yml": 46,
+            "chef-cookbooks\\ohai\\appveyor.yml": 38,
+            "chef-cookbooks\\ohai\\kitchen.appveyor.yml": 23,
+            "chef-cookbooks\\ohai\\kitchen.dokken.yml": 80,
+            "chef-cookbooks\\ohai\\kitchen.yml": 41
+        },
+        "openldap": {
+            "chef-cookbooks\\openldap\\.rubocop.yml": 10,
+            "chef-cookbooks\\openldap\\.travis.yml": 45,
+            "chef-cookbooks\\openldap\\kitchen.dokken.yml": 84,
+            "chef-cookbooks\\openldap\\kitchen.yml": 46
+        },
+        "openssh": {
+            "chef-cookbooks\\openssh\\.travis.yml": 57,
+            "chef-cookbooks\\openssh\\kitchen.dokken.yml": 80,
+            "chef-cookbooks\\openssh\\kitchen.yml": 42
+        },
+        "perl": {
+            "chef-cookbooks\\perl\\.travis.yml": 44,
+            "chef-cookbooks\\perl\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\perl\\kitchen.yml": 33
+        },
+        "postfix": {
+            "chef-cookbooks\\postfix\\.travis.yml": 50,
+            "chef-cookbooks\\postfix\\kitchen.dokken.yml": 70,
+            "chef-cookbooks\\postfix\\kitchen.yml": 89
+        },
+        "powershell": {
+            "chef-cookbooks\\powershell\\.kitchen.appveyor.yml": 24,
+            "chef-cookbooks\\powershell\\appveyor.yml": 43,
+            "chef-cookbooks\\powershell\\kitchen.yml": 35
+        },
+        "push-jobs": {
+            "chef-cookbooks\\push-jobs\\.kitchen.appveyor.yml": 28,
+            "chef-cookbooks\\push-jobs\\.rubocop.yml": 4,
+            "chef-cookbooks\\push-jobs\\.travis.yml": 43,
+            "chef-cookbooks\\push-jobs\\appveyor.yml": 38,
+            "chef-cookbooks\\push-jobs\\kitchen.dokken.yml": 80,
+            "chef-cookbooks\\push-jobs\\kitchen.yml": 53
+        },
+        "rsyslog": {
+            "chef-cookbooks\\rsyslog\\.rubocop.yml": 13,
+            "chef-cookbooks\\rsyslog\\.travis.yml": 66,
+            "chef-cookbooks\\rsyslog\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\rsyslog\\kitchen.yml": 62
+        },
+        "runit": {
+            "chef-cookbooks\\runit\\.rubocop.yml": 11,
+            "chef-cookbooks\\runit\\.travis.yml": 52,
+            "chef-cookbooks\\runit\\kitchen.dokken.yml": 70,
+            "chef-cookbooks\\runit\\kitchen.yml": 32
+        },
+        "sql_server": {
+            "chef-cookbooks\\sql_server\\.kitchen.appveyor.yml": 24,
+            "chef-cookbooks\\sql_server\\appveyor.yml": 38,
+            "chef-cookbooks\\sql_server\\kitchen.yml": 66
+        },
+        "ssh_known_hosts": {
+            "chef-cookbooks\\ssh_known_hosts\\.travis.yml": 47,
+            "chef-cookbooks\\ssh_known_hosts\\kitchen.dokken.yml": 94,
+            "chef-cookbooks\\ssh_known_hosts\\kitchen.yml": 45
+        },
+        "sssd_ldap": {
+            "chef-cookbooks\\sssd_ldap\\.travis.yml": 51,
+            "chef-cookbooks\\sssd_ldap\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\sssd_ldap\\kitchen.yml": 35
+        },
+        "subversion": {
+            "chef-cookbooks\\subversion\\.travis.yml": 50,
+            "chef-cookbooks\\subversion\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\subversion\\kitchen.yml": 33
+        },
+        "sudo": {
+            "chef-cookbooks\\sudo\\.rubocop.yml": 3,
+            "chef-cookbooks\\sudo\\.travis.yml": 54,
+            "chef-cookbooks\\sudo\\kitchen.dokken.yml": 75,
+            "chef-cookbooks\\sudo\\kitchen.yml": 48
+        },
+        "tar": {
+            "chef-cookbooks\\tar\\.rubocop.yml": 5,
+            "chef-cookbooks\\tar\\.travis.yml": 43,
+            "chef-cookbooks\\tar\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\tar\\kitchen.yml": 29
+        },
+        "tomcat": {
+            "chef-cookbooks\\tomcat\\.travis.yml": 51,
+            "chef-cookbooks\\tomcat\\kitchen.dokken.yml": 80,
+            "chef-cookbooks\\tomcat\\kitchen.yml": 32
+        },
+        "transmission": {
+            "chef-cookbooks\\transmission\\.rubocop.yml": 16,
+            "chef-cookbooks\\transmission\\.travis.yml": 40,
+            "chef-cookbooks\\transmission\\kitchen.dokken.yml": 74,
+            "chef-cookbooks\\transmission\\kitchen.yml": 42
+        },
+        "users": {
+            "chef-cookbooks\\users\\.rubocop.yml": 6,
+            "chef-cookbooks\\users\\.travis.yml": 43,
+            "chef-cookbooks\\users\\kitchen.dokken.yml": 68,
+            "chef-cookbooks\\users\\kitchen.yml": 38
+        },
+        "webpi": {
+            "chef-cookbooks\\webpi\\.kitchen.appveyor.yml": 20,
+            "chef-cookbooks\\webpi\\appveyor.yml": 38,
+            "chef-cookbooks\\webpi\\kitchen.yml": 26
+        },
+        "windows": {
+            "chef-cookbooks\\windows\\.rubocop.yml": 46,
+            "chef-cookbooks\\windows\\appveyor.yml": 38,
+            "chef-cookbooks\\windows\\kitchen.appveyor.yml": 38,
+            "chef-cookbooks\\windows\\kitchen.yml": 78
+        }
+    },
+    "chef-customers": {
+        "aws_native_chef_server": {
+            "chef-customers\\aws_native_chef_server\\.travis.yml": 27
+        }
+    },
+    "chef-partners": {
+        "azure-chef-extension": {
+            "chef-partners\\azure-chef-extension\\.travis.yml": 4
+        }
+    },
+    "chefspec": {
+        "chefspec": {
+            "chefspec\\chefspec\\.travis.yml": 66
+        },
+        "fauxhai": {
+            "chefspec\\fauxhai\\.travis.yml": 13,
+            "chefspec\\fauxhai\\.github\\lock.yml": 3,
+            "chefspec\\fauxhai\\.github\\reaction.yml": 1
+        }
+    },
+    "computology": {
+        "packagecloud-cookbook": {
+            "computology\\packagecloud-cookbook\\.kitchen.dokken.yml": 72,
+            "computology\\packagecloud-cookbook\\.kitchen.yml": 51,
+            "computology\\packagecloud-cookbook\\.rubocop.yml": 7,
+            "computology\\packagecloud-cookbook\\.travis.yml": 43
+        }
+    },
+    "criteo-cookbooks": {
+        "chef-exabgp": {
+            "criteo-cookbooks\\chef-exabgp\\.kitchen.dokken.yml": 26,
+            "criteo-cookbooks\\chef-exabgp\\.kitchen.yml": 37,
+            "criteo-cookbooks\\chef-exabgp\\.travis.yml": 37
+        },
+        "choregraphie": {
+            "criteo-cookbooks\\choregraphie\\.kitchen.ec2.yml": 48,
+            "criteo-cookbooks\\choregraphie\\.kitchen.yml": 36,
+            "criteo-cookbooks\\choregraphie\\.kitchen_suites.yml": 3,
+            "criteo-cookbooks\\choregraphie\\.rubocop.yml": 105,
+            "criteo-cookbooks\\choregraphie\\.travis.yml": 28
+        },
+        "ms_dotnet": {
+            "criteo-cookbooks\\ms_dotnet\\.kitchen.yml": 44,
+            "criteo-cookbooks\\ms_dotnet\\.rubocop.yml": 27,
+            "criteo-cookbooks\\ms_dotnet\\.travis.yml": 20,
+            "criteo-cookbooks\\ms_dotnet\\spec\\data\\2012R2_registry.yml": 9
+        },
+        "nexus3": {
+            "criteo-cookbooks\\nexus3\\.kitchen.appveyor.yml": 31,
+            "criteo-cookbooks\\nexus3\\.kitchen.docker.yml": 110,
+            "criteo-cookbooks\\nexus3\\.kitchen.localhost.yml": 16,
+            "criteo-cookbooks\\nexus3\\.kitchen.vmware.yml": 24,
+            "criteo-cookbooks\\nexus3\\.kitchen.yml": 42,
+            "criteo-cookbooks\\nexus3\\.rubocop.yml": 19,
+            "criteo-cookbooks\\nexus3\\.travis.yml": 40,
+            "criteo-cookbooks\\nexus3\\appveyor.yml": 35
+        }
+    },
+    "ctdk": {
+        "goiardi": {
+            "ctdk\\goiardi\\.circleci\\config.yml": 89,
+            "ctdk\\goiardi\\vendor\\github.com\\hashicorp\\hcl\\appveyor.yml": 19
+        }
+    },
+    "cvent": {
+        "octopus-deploy-cookbook": {
+            "cvent\\octopus-deploy-cookbook\\.codeclimate.yml": 21,
+            "cvent\\octopus-deploy-cookbook\\.kitchen.appveyor.yml": 28,
+            "cvent\\octopus-deploy-cookbook\\.kitchen.yml": 31,
+            "cvent\\octopus-deploy-cookbook\\.rubocop.yml": 8,
+            "cvent\\octopus-deploy-cookbook\\.rubocop_todo.yml": 12,
+            "cvent\\octopus-deploy-cookbook\\.travis.yml": 8,
+            "cvent\\octopus-deploy-cookbook\\appveyor.yml": 38
+        }
+    },
+    "DataDog": {
+        "chef-datadog": {
+            "DataDog\\chef-datadog\\.kitchen.docker.yml": 24,
+            "DataDog\\chef-datadog\\.kitchen.yml": 566,
+            "DataDog\\chef-datadog\\.rubocop.yml": 29,
+            "DataDog\\chef-datadog\\.travis.yml": 27,
+            "DataDog\\chef-datadog\\.circleci\\config.yml": 23
+        },
+        "chef-handler-datadog": {
+            "DataDog\\chef-handler-datadog\\.rubocop.yml": 44,
+            "DataDog\\chef-handler-datadog\\.travis.yml": 31,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\failed_Chef_run\\sets_alert_handles_when_specified.yml": 591,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\failed_Chef_run\\sets_event_title_correctly.yml": 297,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\failed_Chef_run\\sets_priority_correctly.yml": 297,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\handles_no_application_key\\fails_when_no_application_key_is_provided.yml": 143,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\hostname\\uses_the_node_name_when_no_config_specified.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\hostname\\uses_the_specified_hostname_when_provided.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_correct_hostname_on_an_ec2_node\\does_not_use_the_instance_id_when_config_specified_to_false.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_correct_hostname_on_an_ec2_node\\uses_the_instance_id_when_config_is_specified.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_correct_hostname_on_an_ec2_node\\uses_the_instance_id_when_no_config_specified.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_metrics_event_and_sets_tags\\emits_events\\posts_an_event.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_metrics_event_and_sets_tags\\emits_events\\sets_priority_correctly.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_metrics_event_and_sets_tags\\emits_metrics\\reports_metrics.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\reports_metrics_event_and_sets_tags\\sets_tags\\puts_the_tags_for_the_current_node.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\resources\\failure_during_compile_phase\\only_emits_the_run_status_metrics.yml": 173,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\resources\\failure_during_compile_phase\\posts_an_event.yml": 173,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\resources\\failure_during_compile_phase_with_an_elapsed_time_and_incomplete_resource_collection\\only_emits_the_run_status_metrics.yml": 173,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\resources\\failure_during_compile_phase_with_an_elapsed_time_and_incomplete_resource_collection\\posts_an_event.yml": 173,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_policy_tags_are_enabled\\sets_the_policy_name_and_policy_group_tags.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_policy_tags_are_not_enabled\\does_not_set_the_policy_name_and_policy_group_tags.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_specified\\allows_for_empty_scope_prefix.yml": 290,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_specified\\allows_for_empty_tag_prefix.yml": 329,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_specified\\allows_for_user-specified_scope_prefix.yml": 290,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_specified\\allows_for_user-specified_tag_prefix.yml": 290,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_specified\\sets_the_role_and_env_and_tags.yml": 290,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_tag_blacklist_is_specified\\does_not_include_the_tag_s_specified.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_tag_blacklist_is_unspecified\\should_include_all_of_the_tag_s_.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags\\when_unspecified\\sets_role_env_and_nothing_else.yml": 290,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags_submission_retries\\when_not_specified\\does_not_retry_after_a_failed_submission.yml": 278,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags_submission_retries\\when_specified_as_2_retries\\retries_no_more_than_twice.yml": 368,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\tags_submission_retries\\when_specified_as_2_retries\\stops_retrying_once_submission_is_successful.yml": 324,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\updated_resources\\posts_an_event.yml": 289,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\when_reporting_to_multiple_endpoints\\emits_events\\posts_an_event.yml": 575,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\when_reporting_to_multiple_endpoints\\emits_metrics\\reports_metrics.yml": 575,
+            "DataDog\\chef-handler-datadog\\spec\\support\\cassettes\\Chef_Handler_Datadog\\when_reporting_to_multiple_endpoints\\sets_tags\\puts_the_tags_for_the_current_node.yml": 575
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "carlbuchmann": {
+        "iac-dev": {
+            "carlbuchmann\\iac-dev\\iac-dev.yml": 34,
+            "carlbuchmann\\iac-dev\\host_vars\\localhost.yml": 19,
+            "carlbuchmann\\iac-dev\\roles\\requirements.yml": 20
+        }
+    },
+    "chanzuckerberg": {
+        "fogg": {
+            "chanzuckerberg\\fogg\\.goreleaser.prerelease.yml": 24,
+            "chanzuckerberg\\fogg\\.goreleaser.yml": 32,
+            "chanzuckerberg\\fogg\\.travis.yml": 20,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\agext\\levenshtein\\.travis.yml": 70,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\aokoli\\goutils\\.travis.yml": 18,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\aokoli\\goutils\\appveyor.yml": 21,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\armon\\go-radix\\.travis.yml": 3,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\blang\\semver\\.travis.yml": 21,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\fatih\\color\\.travis.yml": 5,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\go-errors\\errors\\.travis.yml": 5,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\go-ini\\ini\\.travis.yml": 17,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\gobuffalo\\packr\\.codeclimate.yml": 20,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\gobuffalo\\packr\\.goreleaser.yml": 25,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\gobuffalo\\packr\\.travis.yml": 16,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\google\\uuid\\.travis.yml": 9,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\go-getter\\.travis.yml": 23,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\go-getter\\appveyor.yml": 16,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\go-multierror\\.travis.yml": 12,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\go-uuid\\.travis.yml": 12,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\go-version\\.travis.yml": 13,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\hcl\\.travis.yml": 13,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\hcl\\appveyor.yml": 19,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\hil\\.travis.yml": 3,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\hashicorp\\hil\\appveyor.yml": 18,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\howeyc\\gopass\\.travis.yml": 11,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\huandu\\xstrings\\.travis.yml": 1,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\imdario\\mergo\\.travis.yml": 7,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\imdario\\mergo\\testdata\\license.yml": 4,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\jmespath\\go-jmespath\\.travis.yml": 9,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\Masterminds\\semver\\.travis.yml": 27,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\Masterminds\\semver\\appveyor.yml": 44,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\Masterminds\\sprig\\.travis.yml": 24,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\Masterminds\\sprig\\appveyor.yml": 26,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mattn\\go-colorable\\.travis.yml": 9,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mattn\\go-isatty\\.travis.yml": 13,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mitchellh\\cli\\.travis.yml": 14,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mitchellh\\copystructure\\.travis.yml": 12,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mitchellh\\go-testing-interface\\.travis.yml": 13,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mitchellh\\mapstructure\\.travis.yml": 8,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\mitchellh\\reflectwalk\\.travis.yml": 1,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\pkg\\errors\\.travis.yml": 11,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\pkg\\errors\\appveyor.yml": 32,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\posener\\complete\\.travis.yml": 17,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\sirupsen\\logrus\\.travis.yml": 51,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\sirupsen\\logrus\\appveyor.yml": 14,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\spf13\\afero\\.travis.yml": 21,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\spf13\\afero\\appveyor.yml": 15,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\spf13\\cobra\\.travis.yml": 21,
+            "chanzuckerberg\\fogg\\vendor\\github.com\\spf13\\pflag\\.travis.yml": 21,
+            "chanzuckerberg\\fogg\\vendor\\gopkg.in\\yaml.v2\\.travis.yml": 12
+        }
+    }
+}

@@ -1,0 +1,395 @@
+{
+    "ajcrowe": {
+        "puppet-supervisord": {
+            "ajcrowe\\puppet-supervisord\\.fixtures.yml": 10,
+            "ajcrowe\\puppet-supervisord\\.travis.yml": 27,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\centos-66-x64.yml": 10,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\centos-7-x64-docker.yml": 9,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\centos-70-x64.yml": 10,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\debian-78-x64.yml": 10,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\debian-8-x64-docker.yml": 13,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\default.yml": 10,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\ubuntu-1404-x64.yml": 10,
+            "ajcrowe\\puppet-supervisord\\spec\\acceptance\\nodesets\\ubuntu-1604-x64.yml": 10
+        }
+    },
+    "albatrossflavour": {
+        "puppet_os_patching": {
+            "albatrossflavour\\puppet_os_patching\\.fixtures.yml": 6,
+            "albatrossflavour\\puppet_os_patching\\.gitlab-ci.yml": 41,
+            "albatrossflavour\\puppet_os_patching\\.rubocop.yml": 124,
+            "albatrossflavour\\puppet_os_patching\\.travis.yml": 27,
+            "albatrossflavour\\puppet_os_patching\\appveyor.yml": 63,
+            "albatrossflavour\\puppet_os_patching\\bitbucket-pipelines.yml": 16,
+            "albatrossflavour\\puppet_os_patching\\spec\\default_facts.yml": 7
+        }
+    },
+    "alphagov": {
+        "govuk-puppet": {
+            "alphagov\\govuk-puppet\\.travis.yml": 32,
+            "alphagov\\govuk-puppet\\hiera.yml": 21,
+            "alphagov\\govuk-puppet\\hiera_aws.yml": 22,
+            "alphagov\\govuk-puppet\\modules\\govuk_prometheus\\files\\etc\\prometheus\\prometheus.yml": 29
+        }
+    },
+    "bartavelle": {
+        "language-puppet": {
+            "bartavelle\\language-puppet\\.travis.yml": 110
+        }
+    },
+    "biemond": {
+        "biemond-oradb": {
+            "biemond\\biemond-oradb\\.coveralls.yml": 2,
+            "biemond\\biemond-oradb\\.fixtures.yml": 6,
+            "biemond\\biemond-oradb\\.gitlab-ci.yml": 41,
+            "biemond\\biemond-oradb\\.rubocop.yml": 122,
+            "biemond\\biemond-oradb\\.travis.yml": 35,
+            "biemond\\biemond-oradb\\appveyor.yml": 60,
+            "biemond\\biemond-oradb\\spec\\default_facts.yml": 8
+        },
+        "biemond-orawls": {
+            "biemond\\biemond-orawls\\.coveralls.yml": 2,
+            "biemond\\biemond-orawls\\.fixtures.yml": 14,
+            "biemond\\biemond-orawls\\.gitlab-ci.yml": 41,
+            "biemond\\biemond-orawls\\.rubocop.yml": 122,
+            "biemond\\biemond-orawls\\.travis.yml": 35,
+            "biemond\\biemond-orawls\\appveyor.yml": 60,
+            "biemond\\biemond-orawls\\spec\\default_facts.yml": 8
+        },
+        "biemond-wildfly": {
+            "biemond\\biemond-wildfly\\.codeclimate.yml": 20,
+            "biemond\\biemond-wildfly\\.coveralls.yml": 2,
+            "biemond\\biemond-wildfly\\.fixtures.yml": 7,
+            "biemond\\biemond-wildfly\\.rubocop.yml": 68,
+            "biemond\\biemond-wildfly\\.travis.yml": 66,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\centos-72-x64.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\centos7m_centos7a.yml": 16,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\debian-78-x64.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\debian-82-x64.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\default.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\oel-73-x64.yml": 12,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\ubuntu-1404-x64.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\ubuntu-1604-x64.yml": 11,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\centos-6.yml": 14,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\centos-7.yml": 18,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\debian-7.yml": 16,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\debian-8.yml": 18,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\ubuntu-1404.yml": 19,
+            "biemond\\biemond-wildfly\\spec\\acceptance\\nodesets\\docker\\ubuntu-1604.yml": 17
+        }
+    },
+    "binford2k": {
+        "binford2k-node_encrypt": {
+            "binford2k\\binford2k-node_encrypt\\.fixtures.yml": 7
+        }
+    },
+    "bstopp": {
+        "puppet-aem": {
+            "bstopp\\puppet-aem\\.codeclimate.yml": 16,
+            "bstopp\\puppet-aem\\.fixtures.yml": 9,
+            "bstopp\\puppet-aem\\.rubocop.yml": 42,
+            "bstopp\\puppet-aem\\.rubocop_todo.yml": 68,
+            "bstopp\\puppet-aem\\.sync.yml": 3,
+            "bstopp\\puppet-aem\\.travis.yml": 19,
+            "bstopp\\puppet-aem\\spec\\acceptance\\nodesets\\centos-7.2-x64.yml": 30,
+            "bstopp\\puppet-aem\\spec\\acceptance\\nodesets\\debian-7-x64.yml": 27,
+            "bstopp\\puppet-aem\\spec\\acceptance\\nodesets\\debian-8-x64.yml": 23,
+            "bstopp\\puppet-aem\\spec\\acceptance\\nodesets\\ubuntu-14.04-x64.yml": 23,
+            "bstopp\\puppet-aem\\spec\\acceptance\\nodesets\\ubuntu-16.04-x64.yml": 23
+        }
+    },
+    "bzed": {
+        "bzed-letsencrypt": {
+            "bzed\\bzed-letsencrypt\\.fixtures.yml": 13,
+            "bzed\\bzed-letsencrypt\\.msync.yml": 1,
+            "bzed\\bzed-letsencrypt\\.nodeset.yml": 11,
+            "bzed\\bzed-letsencrypt\\.rubocop.yml": 512,
+            "bzed\\bzed-letsencrypt\\.travis.yml": 50
+        }
+    },
+    "camptocamp": {
+        "puppet-augeas": {
+            "camptocamp\\puppet-augeas\\.fixtures.yml": 5,
+            "camptocamp\\puppet-augeas\\.sync.yml": 3,
+            "camptocamp\\puppet-augeas\\.travis.yml": 32,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-5-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-8-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-8-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-8-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-10.04-x86_64-docker.yml": 13,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-augeas\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-catalog-diff-viewer": {
+            "camptocamp\\puppet-catalog-diff-viewer\\.travis.yml": 13
+        },
+        "puppet-kmod": {
+            "camptocamp\\puppet-kmod\\.fixtures.yml": 9,
+            "camptocamp\\puppet-kmod\\.sync.yml": 3,
+            "camptocamp\\puppet-kmod\\.travis.yml": 34,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-5-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-8-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-8-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-8-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\debian-9.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-10.04-x86_64-docker.yml": 13,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-kmod\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-openldap": {
+            "camptocamp\\puppet-openldap\\.fixtures.yml": 7,
+            "camptocamp\\puppet-openldap\\.sync.yml": 5,
+            "camptocamp\\puppet-openldap\\.travis.yml": 81,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\debian-9.yml": 15,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-openldap\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-openssl": {
+            "camptocamp\\puppet-openssl\\.fixtures.yml": 5,
+            "camptocamp\\puppet-openssl\\.sync.yml": 11,
+            "camptocamp\\puppet-openssl\\.travis.yml": 34,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-5-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-8-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-8-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-8-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\debian-9.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-10.04-x86_64-docker.yml": 13,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-openssl\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-postfix": {
+            "camptocamp\\puppet-postfix\\.fixtures.yml": 14,
+            "camptocamp\\puppet-postfix\\.sync.yml": 31,
+            "camptocamp\\puppet-postfix\\.travis.yml": 124,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\debian-9.yml": 15,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-postfix\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-systemd": {
+            "camptocamp\\puppet-systemd\\.fixtures.yml": 7,
+            "camptocamp\\puppet-systemd\\.sync.yml": 3,
+            "camptocamp\\puppet-systemd\\.travis.yml": 34,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-5-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-6-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-6-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-6-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-7-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-7-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-7-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-8-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-8-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-8-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-10.04-x86_64-docker.yml": 13,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-12.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.04-x86_64-vagrant.yml": 11,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.10-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-docker.yml": 15,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-15.04-x86_64-openstack.yml": 14,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-systemd\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        },
+        "puppet-tomcat": {
+            "camptocamp\\puppet-tomcat\\.fixtures.yml": 11,
+            "camptocamp\\puppet-tomcat\\.sync.yml": 10,
+            "camptocamp\\puppet-tomcat\\.travis.yml": 75,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\centos-5.yml": 16,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\centos-6.yml": 17,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\centos-7.yml": 15,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\debian-6.yml": 15,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\debian-7.yml": 15,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\debian-8.yml": 16,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-12.04.yml": 16,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-14.04.yml": 18,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-14.10.yml": 18,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-15.04.yml": 16,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-15.10.yml": 16,
+            "camptocamp\\puppet-tomcat\\spec\\acceptance\\nodesets\\ubuntu-16.04.yml": 16
+        }
+    },
+    "choria-io": {
+        "mcollective-choria": {
+            "choria-io\\mcollective-choria\\.rubocop.yml": 165,
+            "choria-io\\mcollective-choria\\.circleci\\config.yml": 15
+        },
+        "puppet-mcollective": {}
+    },
+    "choria-legacy": {
+        "mcollective-puppet-agent": {
+            "choria-legacy\\mcollective-puppet-agent\\.travis.yml": 14
+        }
+    },
+    "claranet": {
+        "puppet-consul_template": {
+            "claranet\\puppet-consul_template\\.fixtures.yml": 14,
+            "claranet\\puppet-consul_template\\.rubocop.yml": 118,
+            "claranet\\puppet-consul_template\\.sync.yml": 14,
+            "claranet\\puppet-consul_template\\.travis.yml": 44,
+            "claranet\\puppet-consul_template\\spec\\default_facts.yml": 8,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\centos-511-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\centos-64-x64.yml": 11,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\centos-65-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\centos-7-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\debian-609-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\debian-76-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\default.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\fedora-20-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\ubuntu-server-1204-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\ubuntu-server-12042-x64.yml": 12,
+            "claranet\\puppet-consul_template\\spec\\acceptance\\nodesets\\ubuntu-server-1404-x64.yml": 12
+        }
+    },
+    "counsyl": {
+        "puppet-sys": {}
+    },
+    "crayfishx": {
+        "puppet-firewalld": {
+            "crayfishx\\puppet-firewalld\\.fixtures.yml": 9,
+            "crayfishx\\puppet-firewalld\\.travis.yml": 28,
+            "crayfishx\\puppet-firewalld\\spec\\acceptance\\nodesets\\default.yml": 6
+        }
+    },
+    "dalen": {
+        "puppet-puppetdbquery": {
+            "dalen\\puppet-puppetdbquery\\.rubocop.yml": 3,
+            "dalen\\puppet-puppetdbquery\\.travis.yml": 24
+        }
+    },
+    "danieldreier": {
+        "autosign": {
+            "danieldreier\\autosign\\.travis.yml": 48
+        }
+    }
+}
